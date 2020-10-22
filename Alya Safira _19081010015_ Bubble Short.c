@@ -21,7 +21,7 @@ int main()
 {
 	int A[n]={20,18,19,20,20,18,19};
 	int x,i,j,k;
-	float tengah;
+	float usia;
 // Menampilkan Data Yang sudah ada 
 
 	
@@ -987,35 +987,7 @@ int main()
 		}
 		else if(pilihan==4)
 		{   
-					printf("\t\t--PROGRAM BUBBLE SHORT USIA MAHASISWA --\n\n");
-					printf("Data Mentah\t:\n\n");
 					
-					for(i=0;i<=n-1;i++)
-					printf("%4i",A[i]);
-					printf("\n\n");
-	
-					for(k=0;k<=n-2;k++)
-				{
-					j=k;
-					for(i=k+1;i<=n-1;i++)
-				{
-					if(A[i]<A[j])
-					j=i;
-				}		
-		
-					x=A[j];
-					A[j]=A[k];
-					A[k]=x;
-				}
-
-	
-				printf("Data Terurut Dari Yang Paling Muda\t:\n\n");
-				for(i=0;i<=n-1;i++)
-				printf("%4i",A[i]);
-				printf("\n\nJumlah data\t: %d\n",n);
-				printf("\n\n");
-				printf("_________________________________________________________________________________________________________________\n\n"); 
-				
 				printf("Menampilkan Data Lengkap Mahasiswa Yang Telah Diurutkan Berdasarkan Usia\n\n");
 				printf("_________________________________________________________________________________________________________________\n\n"); 
 				
@@ -1096,7 +1068,37 @@ int main()
 				printf("NPM         = 19081010016\n\n");
 				printf("\n\n\t");
 				printf("_________________________________________________________________________________________________________________\n\n");
+				
+				
+					printf("\t\t--PROGRAM BUBBLE SHORT USIA MAHASISWA --\n\n");
+					printf("Data Mentah Sebelum Dirutkan\t:\n\n");
+					
+					for(i=0;i<=n-1;i++)
+					printf("%4i",A[i]);
+					printf("\n\n");
 	
+					for(k=0;k<=n-2;k++)
+				{
+					j=k;
+					for(i=k+1;i<=n-1;i++)
+				{
+					if(A[i]<A[j])
+					j=i;
+				}		
+		
+					x=A[j];
+					A[j]=A[k];
+					A[k]=x;
+				}
+
+	
+				printf("Data Terurut Dari Yang Paling Muda\t:\n\n");
+				for(i=0;i<=n-1;i++)
+				printf("%4i",A[i]);
+				printf("\n\nJumlah data\t: %d\n",n);
+				printf("\n\n");
+				printf("_________________________________________________________________________________________________________________\n\n"); 
+				
 				
 	
 }   		
